@@ -1,9 +1,7 @@
 import { tokenize } from 'esprima'
-import fs from 'fs'
 import { TokenizeType, Token } from './types'
 
 
-const sampleFileString = fs.readFileSync('./sample.js', 'utf8')
 
 const defaults: TokenizeType = {
   tolerant: true,
