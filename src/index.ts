@@ -46,6 +46,5 @@ const extractDisabledEslint = (fileString: string) => {
   return getDisabledEslint(comments)
 }
 
-console.log(extractDisabledEslint(sampleFileString))
 
 export default extractDisabledEslint
