@@ -5,7 +5,16 @@
   "repository": "git@github.com:Matwog/extract-disabled-eslint.git",
   "author": "Gowtham Mohan <gowtham.mohan@signavio.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
   "dependencies": {
+    "@types/esprima": "^4.0.2",
+    "@types/node": "^14.0.23",
     "esprima": "^4.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
   }
 }
