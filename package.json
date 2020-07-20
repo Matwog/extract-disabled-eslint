@@ -1,0 +1,8 @@
+{
+  "name": "extract-disabled-eslint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Matwog/extract-disabled-eslint.git",
+  "author": "Gowtham Mohan <gowtham.mohan@signavio.com>",
+  "license": "MIT"
+}
