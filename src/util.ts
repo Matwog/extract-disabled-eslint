@@ -38,31 +38,30 @@ export const getSortedList = (comments: Array<Token>) => comments.sort((a: Token
 export const getListOfEslintStrings = (comments: Array<Token>) => {
     return comments.map(comment => comment.value.trim())
 }
+
 export const getListOfUniqueEslintDisabledComments = (comments: Array<string>) => {
     return comments.reduce((unique: Array<string>, item) =>
         unique.includes(item) ? unique : [...unique, item]
         , [])
 }
 
-
-
 export const getNumberOfOccurrences = (listOfEslintString: Array<string>) => {
-    return listOfEslintString.reduce((acc: Array<OccurrencesType> | any, eslintRule) => {
-        if (acc && acc.some((element: OccurrencesType) => element[eslintRule])) {
-            acc = acc.map((el: OccurrencesType, index: number | string) => {
-                if (el[eslintRule]) {
-                    el[eslintRule] = el[eslintRule] + 1
-                    return el
+    return listOfEslintString.reduce((listOfOccurrences: Array<OccurrencesType> | any, eslintRule) => {
+        if (listOfOccurrences && listOfOccurrences.some((occurrence: OccurrencesType) => occurrence[eslintRule])) {
+            listOfOccurrences = listOfOccurrences.map((occurrence: OccurrencesType, index: number | string) => {
+                if (occurrence[eslintRule]) {
+                    occurrence[eslintRule] = occurrence[eslintRule] + 1
+                    return occurrence
                 } else {
-                    return el
+                    return occurrence
                 }
             })
-            return acc
+            return listOfOccurrences
         } else {
             let newRule: OccurrencesType = {}
             newRule[eslintRule] = Number(1)
-            acc.push(newRule)
+            listOfOccurrences.push(newRule)
         }
-        return acc
+        return listOfOccurrences
     }, [])
 }
