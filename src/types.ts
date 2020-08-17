@@ -13,3 +13,6 @@ export type Token = {
     range?: Array<number>,
     loc?: object
 }
+export type OccurrencesType = {
+    [rule: string]: number,
+}
