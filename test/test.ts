@@ -2,7 +2,7 @@ import extractDisabledEslint from '../src/index'
 import fs from 'fs'
 
 describe('extractDisabledEslint', () => {
-    const sampleFileString = fs.readFileSync('./sample.js', 'utf8')
+    const sampleFileString = fs.readFileSync('./test/testSample.js', 'utf8')
     it('Should return the disabled eslint rules', () => {
         const [expectedDisabledEslintRules] = [
             {
@@ -15,9 +15,9 @@ describe('extractDisabledEslint', () => {
             }
         ]
 
-        const receivedDisabledEslintRules = extractDisabledEslint(sampleFileString)
+        const { listOfDisabledEslint } = extractDisabledEslint(sampleFileString)
 
-        expect(receivedDisabledEslintRules).toEqual(expect.arrayContaining([
+        expect(listOfDisabledEslint).toEqual(expect.arrayContaining([
             expect.objectContaining(expectedDisabledEslintRules)
         ]))
     })
