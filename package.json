@@ -7,13 +7,14 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/index.js",
+    "start": "npx ts-node src/index.ts",
     "test": "jest"
   },
   "dependencies": {
     "@types/esprima": "^4.0.2",
     "@types/node": "^14.0.23",
-    "esprima": "^4.0.1"
+    "esprima": "^4.0.1",
+    "ts-node": "^8.10.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.5",
