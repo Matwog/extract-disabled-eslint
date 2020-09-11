@@ -1,6 +1,6 @@
 {
   "name": "extract-disabled-eslint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:Matwog/extract-disabled-eslint.git",
