@@ -1,14 +1,16 @@
 {
   "name": "extract-disabled-eslint",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:Matwog/extract-disabled-eslint.git",
   "author": "Gowtham Mohan <gowtham.mohan@signavio.com>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "npx ts-node src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "yarn run build"
   },
   "dependencies": {
     "@types/esprima": "^4.0.2",
