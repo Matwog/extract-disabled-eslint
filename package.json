@@ -10,7 +10,8 @@
     "build": "tsc",
     "start": "npx ts-node src/index.ts",
     "test": "jest",
-    "prepare": "yarn run build"
+    "prepare": "yarn run build",
+    "prepublish": "tsc"
   },
   "dependencies": {
     "@types/esprima": "^4.0.2",
