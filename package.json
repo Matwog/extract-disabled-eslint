@@ -10,8 +10,8 @@
     "build": "tsc",
     "start": "npx ts-node src/index.ts",
     "test": "jest",
-    "prepare": "yarn run build",
-    "prepublishOnly": "yarn run test",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
