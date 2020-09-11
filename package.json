@@ -11,7 +11,9 @@
     "start": "npx ts-node src/index.ts",
     "test": "jest",
     "prepare": "yarn run build",
-    "prepublish": "tsc"
+    "prepublishOnly": "yarn run test",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@types/esprima": "^4.0.2",
