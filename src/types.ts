@@ -16,3 +16,8 @@ export type Token = {
 export type OccurrencesType = {
     [rule: string]: number,
 }
+
+export interface DisabledEslintRules {
+    listOfDisabledEslint: Array<Token>,
+    numberOfOccurrences: Array<OccurrencesType>
+}

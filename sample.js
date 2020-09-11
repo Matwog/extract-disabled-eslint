@@ -21,3 +21,10 @@ const sample = []
 // eslint-disable-line
 // eslint-disable-next-line no-undef
 // eslint-disable-next-line array-callback-return
+/* eslint-disable */
+/* eslint-disable */
+// eslint-disable-next-line eqeqeq
+// eslint-disable-next-line no-unused-vars
+/* eslint-disable global-require */
+// eslint-disable-next-line new-cap
+// eslint-disable-next-line new-cap
