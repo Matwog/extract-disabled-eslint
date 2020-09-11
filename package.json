@@ -1,6 +1,6 @@
 {
   "name": "extract-disabled-eslint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:Matwog/extract-disabled-eslint.git",
@@ -12,7 +12,7 @@
     "test": "jest",
     "prepare": "yarn run build",
     "prepublishOnly": "yarn run test",
-    "version": "npm run format && git add -A src",
+    "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
